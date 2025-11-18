@@ -1,0 +1,75 @@
+/* ============================
+   Light/Dark Theme Variables
+============================ */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #1e1d1b;
+    --header-text-color: rgb(2, 172, 226);
+}
+
+body.dark {
+    --bg-color: #111827;
+    --text-color: #e5e7eb;
+    --header-text-color: #7dd3fc;
+}
+
+body {
+    display: flex;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+html,
+body,
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#header-title {
+    padding: 0 1rem;
+    margin: 0.4rem 0.4rem;
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 1.5rem;
+    color: var(--header-text-color);
+}
+
+.my-paragraph {
+    color: var(--text-color);
+    margin-left: 3%;
+}
+
+/* ============================
+   About & Credits Styling
+============================ */
+#about-container a {
+    color: rgb(2, 172, 226);
+}
+
+body.dark #about-container a {
+    color: #7dd3fc;
+}
+
+#credits-container a {
+    color: rgb(2, 145, 210);
+}
+
+body.dark #credits-container a {
+    color: #7dd3fc;
+}
+
+body.dark #credits-container {
+    background-color: #1f2937;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Right-side about panel: full width on small screens when overlay */
+@media (max-width: 768px) {
+  calcite-shell-panel[slot="panel-end"][display-mode="overlay"] {
+    width: 100%;
+    max-width: none;
+  }
+}
