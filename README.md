@@ -15,7 +15,7 @@ People visting the Corpus Christi Texasmay be interested in visting a convenenie
 
 ## Technology Stack
 
-**Front-end:** HTML, CSS, JavaScript, Bootstrap
+**Front-end:** HTML, CSS, JavaScript (is bootstrap stil relevant, or switch to Tailwind)
 
 **Mapping Libraries and APIs:** Esri.js, ArcGIS Maps SDK for JavaScript
 
